@@ -1,0 +1,270 @@
+#main-quote {
+	font-size: 56px;
+	width: 1000px;
+	text-align: center;
+	margin: 100px auto;
+	margin-bottom: 150px;
+	padding: 20px;
+	font-style: italic;
+	font-weight: 700;
+	color: rgb(20, 20, 20);
+	background-color: rgb(200, 200, 200);
+	box-shadow: 5px 5px 10px black;
+	border-radius: 20px;
+	transition: 200ms;
+}
+
+#main-quote:hover {
+	transform: translate(0, -10px);
+	box-shadow: 5px 15px 15px black;
+}
+
+/* skill wheel */
+
+#skill-wheel--container {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border: 1px solid rgb(0, 204, 255);
+	margin: 0 auto;
+}
+
+.skill-wheel--item {
+	position: absolute;
+	width: 100px;
+	left: 200px;
+	top: 200px;
+}
+
+#skill-wheel--python {
+	animation: orbit1 12s linear infinite;
+}
+
+#skill-wheel--react {
+	animation: orbit2 12s linear infinite;
+}
+
+#skill-wheel--redhat {
+	animation: orbit3 12s linear infinite;
+}
+
+@keyframes orbit1 {
+	from {
+		transform: rotate(0deg) translateX(150px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(150px) rotate(-360deg);
+	}
+}
+
+@keyframes orbit2 {
+	from {
+		transform: rotate(0deg) translateY(200px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateY(200px) rotate(-360deg);
+	}
+}
+
+@keyframes orbit3 {
+	from {
+		transform: rotate(0deg) translate(-110px, 45px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translate(-110px, 45px) rotate(-360deg);
+	}
+}
+
+/* card styling */
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	column-gap: 10px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card {
+	width: 350px;
+	padding: 20px;
+	color: rgb(20, 20, 20);
+	background-color: rgb(200, 200, 200);
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px black;
+	transition: 200ms;
+}
+
+.card:hover {
+	transform: translate(0, -10px);
+	box-shadow: 5px 15px 15px black;
+}
+
+.card-title {
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+	margin: 0;
+}
+
+.card-divider {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.card-list {
+	list-style-type: none;
+}
+
+.card-list li {
+	font-size: 24px;
+}
+
+.card-list li::before {
+	content: "\2713	  ";
+	color: rgb(0, 204, 255);
+}
+
+.check {
+	color: rgb(27, 221, 27);
+}
+
+/* resume stuff */
+
+#resume-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+#headshot {
+	display: block;
+	width: 350px;
+	height: 350px;
+	border-radius: 20px;
+	z-index: 2;
+}
+
+#resume-text {
+	padding: 20px;
+	font-size: 32px;
+	max-width: 400px;
+	height: fit-content;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 5px 5px 10px black;
+	color: rgb(20, 20, 20);
+	background-color: rgb(200, 200, 200);
+}
+
+#resume-description {
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.resume {
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 10px auto;
+	width: fit-content;
+	color: rgb(20, 20, 20);
+	background-color: rgb(200, 200, 200);
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px black;
+	transition: 200ms;
+}
+
+.resume:hover {
+	background-color: rgb(0, 204, 255);
+	transform: translate(0, -3px);
+	box-shadow: 3px 5px 8px black;
+}
+
+/* social links */
+
+.social-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social-link {
+	display: block;
+	margin: 10px auto;
+}
+
+.social-icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: rgb(200, 200, 200);
+	box-shadow: 3px 3px 5px black;
+	transition: 200ms;
+}
+
+.social-icon:hover {
+	background-color: rgb(0, 204, 255);
+	transform: translate(0, -3px);
+	box-shadow: 3px 5px 8px black;
+}
+
+/* responsive styling */
+
+@media screen and (max-width: 1040px) {
+	
+	#main-quote {
+		width: 80%;
+		font-size: 32px;
+		margin: 20px auto;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	nav {
+		display: block;
+		padding: 10px;
+	}
+	#nav-fadeout {
+		height: 10px;
+	}
+	#title {
+		text-align: center;
+		font-size: 28px;
+	}
+	#nav-links {
+		margin-top: 20px;
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#resume-container {
+		justify-content: center;
+	}
+	#headshot {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		width: 300px;
+		height: 300px;
+	}
+	#resume-text {
+		width: 80%;
+		border-radius: 20px;
+		background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.2));
+		box-shadow: 0 5px 5px 0px rgb(0, 204, 255);
+	}
+	#resume-description {
+		font-size: 24px;
+	}
+}

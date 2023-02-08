@@ -1,0 +1,124 @@
+#content {
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 20vh;
+	z-index: 5;
+}
+
+#name {
+	font-size: 64px;
+	letter-spacing: 3px;
+	text-align: center;
+	font-weight: 700;
+	color: gold;
+	margin: 20px 0;
+}
+
+
+
+hr {
+	width: 80vw;
+	color: gold;
+}
+
+#headshot {
+	width: 400px;
+	height:400px;
+}
+
+.nav-link {
+	display: block;
+	width: 400px;
+	padding: 34px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 28px;
+	color: black;
+	background-color: gold;
+	transition: 150ms;
+}
+
+.nav-link:hover {
+	background-color: coral;
+}
+
+.nav-icon {
+	width: 24px;
+	height: 24px;
+}
+
+#bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#role {
+	width: 800px;
+	font-size: 48px;
+	font-style: italic;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#skills-collage {
+	display: grid;
+	grid-template-columns: 145px 145px;
+	grid-template-rows: 145px 145px;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.skill-img {
+	border-radius: 20px;
+	background-color: white;
+}
+
+#skill-img-1 {
+	grid-row: 1;
+	grid-column: 1;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-2 {
+	grid-row: 1;
+	grid-column: 2;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-3 {
+	grid-row: 2;
+	grid-column: 1;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-4 {
+	grid-row: 2;
+	grid-column: 2;
+	width: 145px;
+	height: 145px;
+}
+
+#alt-indices {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+#alt-indices a {
+	display: block;
+	padding: 10px;
+	color: black;
+	background-color: gold;
+	transition: 150ms;
+
+}
+
+#alt-indices a:hover {
+	background-color: rgb(196, 170, 23);
+}

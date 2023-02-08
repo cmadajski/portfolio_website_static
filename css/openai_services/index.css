@@ -1,0 +1,90 @@
+#services-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+	width: 100vw;
+	margin: 0 auto;
+	color: rgb(20, 20, 20);
+	border-radius: 20px;
+	padding: 0;
+	transition: 200ms;
+}
+
+#services-title {
+	margin: 50px auto;
+	padding: 20px;
+	width: fit-content;
+	color: rgb(20, 20, 20);
+	font-size: 56px;
+	border-radius: 20px;
+	background-color: rgb(200, 200, 200);
+	box-shadow: 5px 5px 10px black;
+}
+
+.service {
+	width: 400px;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgb(200, 200, 200);
+	box-shadow: 5px 5px 10px black;
+}
+
+.service-link {
+	font-size: 26px;
+	text-decoration: none;
+	color: rgb(0, 204, 255);
+	font-weight: 700;
+}
+
+/* progress bar */
+
+.progress-bar-outer {
+	background-color: rgb(170, 170, 170);
+	width: 80%;
+	height: 24px;
+	margin: 10px auto;
+	border-radius: 20px;
+}
+
+.progress-bar-inner {
+	width: 0;
+	background-color: rgb(100, 210, 40);
+	color: rgb(40, 40, 40);
+	border-radius: 20px;
+	text-align: center;
+	height: 24px;
+}
+
+.completion {
+	animation-name: progress-fill-1;
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.transcript, .art {
+	animation-name: progress-fill-2;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/* animations */
+
+@keyframes progress-fill-1 {
+	from {width: 0%;}
+	to {width: 50%;}
+}
+
+@keyframes progress-fill-2 {
+	from {width: 0%;}
+	to {width: 5%;}
+}

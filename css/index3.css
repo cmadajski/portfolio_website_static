@@ -1,0 +1,169 @@
+#content {
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 20vh;
+	z-index: 5;
+}
+
+#name {
+	font-size: 64px;
+	letter-spacing: 3px;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	background-color: gold;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#working-role {
+	font-size: 32px;
+	font-style: italic;
+	margin: 0;
+	padding: 10px;
+	padding-bottom: 40px;
+	text-align: center;
+	color: rgb(60, 60, 60);
+	background-color: gold;
+}
+
+hr {
+	width: 80vw;
+	color: gold;
+	margin: 40px auto;
+}
+
+#headshot {
+	width: 400px;
+	height:400px;
+}
+
+.nav-link {
+	display: block;
+	width: 400px;
+	padding: 35px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 28px;
+	color: black;
+	background-color: gold;
+	transition: 150ms;
+}
+
+.nav-link:hover {
+	background-color: coral;
+}
+
+.nav-icon {
+	width: 24px;
+	height: 24px;
+}
+
+#bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#role {
+	width: 800px;
+	font-size: 48px;
+	font-style: italic;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#skills-collage {
+	display: grid;
+	grid-template-columns: 145px 145px;
+	grid-template-rows: 145px 145px;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.skill-img {
+	border-radius: 20px;
+	background-color: white;
+}
+
+#skill-img-1 {
+	grid-row: 1;
+	grid-column: 1;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-2 {
+	grid-row: 1;
+	grid-column: 2;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-3 {
+	grid-row: 2;
+	grid-column: 1;
+	width: 145px;
+	height: 145px;
+}
+
+#skill-img-4 {
+	grid-row: 2;
+	grid-column: 2;
+	width: 145px;
+	height: 145px;
+}
+
+
+
+#title-img {
+	display: block;
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+}
+
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+.card {
+	width: 350px;
+	padding: 20px;
+	border-radius: 40px;
+	box-shadow: 4px 4px 10px 1px gold;
+}
+
+.card-img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+.card-title {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	margin: 20px;
+}
+
+.card-description {
+	text-align: center;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 20px;
+}
+
+.card-description a{
+	color: gold;
+}

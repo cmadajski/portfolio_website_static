@@ -1,0 +1,32 @@
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-top: 50px;
+}
+
+.project {
+    max-width: 600px;
+    min-width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px black;
+    padding: 20px;
+    margin: 0;
+    color: rgb(20, 20, 20);
+    background-color: rgb(255,255,255,0.8);
+}
+
+.project-title {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 24px;
+}

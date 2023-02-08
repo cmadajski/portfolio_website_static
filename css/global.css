@@ -1,0 +1,83 @@
+body {
+	color: white;
+	background-color: rgb(20, 20, 20);
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+	background-image: url('/img/hexagons1.svg');
+	background-attachment: fixed;
+}
+
+.active {
+	border-bottom: 2px solid rgb(0, 204, 255);
+}
+
+/* navbar styling */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	background-color: rgb(20, 20, 20);
+	box-shadow: 0px 10px 10px black;
+}
+
+#nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+#nav-links a {
+	display: block;
+	text-decoration: none;
+	letter-spacing: normal;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	transition: 200ms;
+}
+
+#nav-links a:hover {
+	color: rgb(0, 204, 255);
+}
+
+#title {
+	font-size: 28px;
+	margin: 0;
+	color: rgb(0, 204, 255);
+	letter-spacing: 2px;
+}
+
+/* responsive styling */
+
+@media screen and (max-width: 1040px) {
+	
+	#main-quote {
+		width: 80%;
+		font-size: 32px;
+		margin: 20px auto;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	nav {
+		display: block;
+		padding: 10px;
+	}
+	#nav-fadeout {
+		height: 10px;
+	}
+	#title {
+		text-align: center;
+		font-size: 28px;
+	}
+	#nav-links {
+		margin-top: 20px;
+		gap: 10px;
+	}
+}

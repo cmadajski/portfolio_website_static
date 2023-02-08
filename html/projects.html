@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/projects.css"></lin>
+		<link rel="stylesheet" href="/css/global.css">
+	</head>
+    <body>
+        <nav>
+			<h1 id="title"><img src="/img/custom_compass.svg" width="36px" height="36px"> Christian Madajski</h1>
+			<div id="nav-links">
+				<a href="/">Home</a>
+				<a class="active" href="/html/projects.html">Projects</a>
+				<a href="/openai/">OpenAI</a>
+			</div>
+		</nav>
+		<div id="nav-fadeout"></div>
+        <div id="projects-container">
+            <div class="project">
+                <p class="project-title">My Professional Portfolio</p>
+                <p class="project-description">
+                    This is the website you are on right now!
+                    This is a static site hosted on a <strong>Linode nanode server</strong>
+                    using <strong>Nginx</strong> to serve files. Using a static site with Nginx ensures
+                    performance and reliability while also reducing complexity, especially
+                    since my personal information rarely changes and is not expansive
+                    enough to justify a dedicated database. I designed and implemented all
+                    HTML, CSS, and SVG files in this project. I also recently added OpenAI
+                    integration via a Django webapp. The Django webapp is running on a separate
+                    server but appears to be a seamless component of the static site thanks to
+                    Nginx's proxy feature. Requests to the /openai/ endpoint are forwarded
+                    to another server that processes the data and returns a Django template
+                    with the desired information.
+                </p>
+            </div>
+            <div class="project">
+                <p class="project-title">Niner Miner</p>
+                <p class="project-description">
+                    Niner Miner was the final project for my computer science
+                    capstone in university. The intention was to provide a service
+                    similar to OfferUp or Facebook Marketplace, but required additional 
+                    authentication in the form of a school email address. It was
+                    designed and implemented by a team that included myself and 4 
+                    other students. We collaborated on the project using GitHub for 
+                    version control, used Figma to prototype all UIs, and used Flask
+                    for the application backend and HTML templating. The application
+                    also includes responsive styling. Due to the restricted market
+                    for such a tool and expense of running multiple servers for a 
+                    non-active service, this application is offline.
+                </p>
+            </div>
+            
+        </div>
+    </body>
+</html>
