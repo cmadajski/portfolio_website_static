@@ -9,6 +9,10 @@ The static website is currently available [here](http://194.195.210.137/). I hav
 I'm unable to use the domain until my SSL certificates are authorized (my domain uses a .dev extension, which requires SSL). The site is being
 served using Nginx, the server is being provided by [Linode](https://www.linode.com/), and the server OS is Fedora Server.
 
-## Development Process
+## Future Plans
 
-WIP
+There are some benefits to having a static site such as reduced latency and increased simplicity. However, for advanced interactions it is
+necessary to have a real web application that can leverage logic and access APIs. The long term goal is to replace this static site with 
+a Django frontend application that pulls data from a FastAPI backend. This will allow me to automate the publishing of blog posts, 
+updating of personal info, and additional integrations. For now, the static site will remain a placeholder until I get those services 
+up and running.
